@@ -9,7 +9,11 @@
   "author": "Noel G",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "socket.io": "^3.0.3"
+    "http": "0.0.1-security",
+    "peer": "^0.5.3",
+    "socket.io": "^3.0.3",
+    "uuid": "^8.3.1"
   }
 }

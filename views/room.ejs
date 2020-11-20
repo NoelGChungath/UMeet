@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    const ROOM_ID = "<%= roomId %>"
+  </script>
+  <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="index.js" defer></script>
+  <title>Chat</title>
+  <style>
+      body{
+          background-color: #232323;
+      }
+    #video-grid {
+      display: grid;
+      grid-auto-rows: 500px;
+      padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .dark{
+        background-color: #1D1E20;
+    }
+    
+  </style>
+</head>
+<body>
+    <div id="video-grid"></div>
+      <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark dark">
+        <a class="navbar-brand" href="#">Bottom navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+         
+        </div>
+      </nav>
+</body>
+</html>
